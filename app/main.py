@@ -8,12 +8,13 @@ from app.core.exceptions import custom_http_exception_handler
 from app.routers import auth, users
 from app.routers import auth, users  
 from app.routers import events
+from app.routers import event_tasks
 
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Event Management API")
 
-app.add_exception_handler(Exception, custom_http_exception_handler)
+# app.add_exception_handler(Exception, custom_http_exception_handler)
 
 @app.get("/health")
 def health_check():
@@ -22,3 +23,4 @@ def health_check():
 app.include_router(auth.router)
 app.include_router(users.router)
 app.include_router(events.router)
+app.include_router(event_tasks.router)

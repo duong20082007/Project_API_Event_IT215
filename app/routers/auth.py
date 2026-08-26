@@ -7,6 +7,10 @@ import app.services.auth_service as auth_svc
 
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 
+login_attempts = {}
+MAX_ATTEMPTS = 5
+LOCKOUT_MINUTES = 15
+
 @router.post("/register", response_model=APIResponse)
 def register(user_in: UserCreate, request: Request, db: Session = Depends(get_db)):
     user = auth_svc.register_user(db=db, user_in=user_in)

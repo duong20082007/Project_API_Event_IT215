@@ -1,0 +1,65 @@
+2026-08-25 13:03:36,718 - ERROR - [root] - Lỗi khi tạo sự kiện: (pymysql.err.OperationalError) (1054, "Unknown column 'is_deleted' in 'field list'")
+[SQL: INSERT INTO events (name, description, owner_id, created_at, is_deleted, deleted_at) VALUES (%(name)s, %(description)s, %(owner_id)s, %(created_at)s, %(is_deleted)s, %(deleted_at)s)]
+[parameters: {'name': 'event', 'description': 'mot cai gi do o day ', 'owner_id': 2, 'created_at': datetime.datetime(2026, 8, 25, 6, 3, 36, 696005), 'is_deleted': 0, 'deleted_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-08-25 13:04:55,908 - ERROR - [root] - Lỗi khi tạo sự kiện: (pymysql.err.OperationalError) (1054, "Unknown column 'is_deleted' in 'field list'")
+[SQL: INSERT INTO events (name, description, owner_id, created_at, is_deleted, deleted_at) VALUES (%(name)s, %(description)s, %(owner_id)s, %(created_at)s, %(is_deleted)s, %(deleted_at)s)]
+[parameters: {'name': 'event', 'description': 'mot cai gi do o day ', 'owner_id': 2, 'created_at': datetime.datetime(2026, 8, 25, 6, 4, 55, 880669), 'is_deleted': 0, 'deleted_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-08-25 13:06:15,322 - ERROR - [root] - Lỗi khi tạo sự kiện: (pymysql.err.OperationalError) (1054, "Unknown column 'is_deleted' in 'field list'")
+[SQL: INSERT INTO events (name, description, owner_id, created_at, is_deleted, deleted_at) VALUES (%(name)s, %(description)s, %(owner_id)s, %(created_at)s, %(is_deleted)s, %(deleted_at)s)]
+[parameters: {'name': 'string', 'description': 'string', 'owner_id': 2, 'created_at': datetime.datetime(2026, 8, 25, 6, 6, 15, 319812), 'is_deleted': 0, 'deleted_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-08-25 13:08:53,223 - ERROR - [root] - Lỗi khi tạo sự kiện: (pymysql.err.OperationalError) (1054, "Unknown column 'is_deleted' in 'field list'")
+[SQL: INSERT INTO events (name, description, owner_id, created_at, is_deleted, deleted_at) VALUES (%(name)s, %(description)s, %(owner_id)s, %(created_at)s, %(is_deleted)s, %(deleted_at)s)]
+[parameters: {'name': 'string', 'description': 'string', 'owner_id': 2, 'created_at': datetime.datetime(2026, 8, 25, 6, 8, 53, 219950), 'is_deleted': 0, 'deleted_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-08-25 13:08:55,345 - ERROR - [root] - Lỗi khi tạo sự kiện: (pymysql.err.OperationalError) (1054, "Unknown column 'is_deleted' in 'field list'")
+[SQL: INSERT INTO events (name, description, owner_id, created_at, is_deleted, deleted_at) VALUES (%(name)s, %(description)s, %(owner_id)s, %(created_at)s, %(is_deleted)s, %(deleted_at)s)]
+[parameters: {'name': 'string', 'description': 'string', 'owner_id': 2, 'created_at': datetime.datetime(2026, 8, 25, 6, 8, 55, 339258), 'is_deleted': 0, 'deleted_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-08-25 13:11:30,133 - ERROR - [root] - Lỗi khi tạo sự kiện: (pymysql.err.OperationalError) (1054, "Unknown column 'is_deleted' in 'field list'")
+[SQL: INSERT INTO events (name, description, owner_id, created_at, is_deleted, deleted_at) VALUES (%(name)s, %(description)s, %(owner_id)s, %(created_at)s, %(is_deleted)s, %(deleted_at)s)]
+[parameters: {'name': 'string1', 'description': 'string', 'owner_id': 1, 'created_at': datetime.datetime(2026, 8, 25, 6, 11, 30, 131303), 'is_deleted': 0, 'deleted_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-08-25 13:13:45,654 - ERROR - [root] - Lỗi khi tạo sự kiện: (pymysql.err.OperationalError) (1054, "Unknown column 'is_deleted' in 'field list'")
+[SQL: INSERT INTO events (name, description, owner_id, created_at, is_deleted, deleted_at) VALUES (%(name)s, %(description)s, %(owner_id)s, %(created_at)s, %(is_deleted)s, %(deleted_at)s)]
+[parameters: {'name': 'string', 'description': 'string', 'owner_id': 1, 'created_at': datetime.datetime(2026, 8, 25, 6, 13, 45, 627951), 'is_deleted': 0, 'deleted_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-08-25 13:17:47,667 - INFO - [root] - User ID 1 đã TẠO sự kiện 'event' (ID: 1)
+2026-08-25 13:21:49,672 - INFO - [root] - User ID 1 đã CẬP NHẬT sự kiện ID: 1
+2026-08-25 13:22:08,561 - INFO - [root] - User ID 1 đã XÓA (Soft Delete) sự kiện ID: 1
+2026-08-25 13:22:54,552 - INFO - [root] - User ID 1 đã TẠO sự kiện 'event' (ID: 2)
+2026-08-25 13:26:34,546 - INFO - [root] - User ID 1 đã TẠO sự kiện 'event2' (ID: 3)
+2026-08-25 13:26:38,493 - INFO - [root] - User ID 1 đã TẠO sự kiện 'event3' (ID: 4)
+2026-08-25 13:30:20,843 - INFO - [root] - User ID 1 đã CẬP NHẬT sự kiện ID: 2
+2026-08-25 13:49:15,708 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string' (ID: 1)
+2026-08-25 13:49:51,104 - INFO - [root] - User ID 1 đã CẬP NHẬT sự kiện ID: 1
+2026-08-25 13:51:45,930 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string2' (ID: 2)
+2026-08-25 13:51:52,471 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string3' (ID: 3)
+2026-08-25 13:51:57,622 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string4' (ID: 4)
+2026-08-25 13:54:14,768 - INFO - [root] - User ID 1 đã THÊM thành viên 2 (Quyền: MEMBER) vào sự kiện ID: 4
+2026-08-25 13:55:17,239 - INFO - [root] - User ID 1 đã XÓA thành viên 2 khỏi sự kiện ID: 4
+2026-08-25 14:00:11,274 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string5' (ID: 5)
+2026-08-25 14:00:14,685 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string6' (ID: 6)
+2026-08-25 14:00:17,891 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string7' (ID: 7)
+2026-08-25 14:00:23,614 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string8' (ID: 8)
+2026-08-25 14:00:29,141 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string9' (ID: 9)
+2026-08-25 14:00:35,099 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string10' (ID: 10)
+2026-08-25 14:01:15,374 - INFO - [root] - User ID 1 đã THÊM thành viên 3 (Quyền: MEMBER) vào sự kiện ID: 2
+2026-08-25 14:01:43,767 - INFO - [root] - User ID 1 đã THÊM thành viên 3 (Quyền: OWNER) vào sự kiện ID: 5
+2026-08-25 14:07:33,668 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string11' (ID: 11)
+2026-08-25 14:07:37,077 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string12' (ID: 12)
+2026-08-25 14:07:41,669 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string13' (ID: 13)
+2026-08-25 14:07:46,074 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string16' (ID: 14)
+2026-08-25 14:07:50,981 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string17' (ID: 15)
+2026-08-25 14:07:56,899 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string18' (ID: 16)
+2026-08-25 14:08:00,978 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string19' (ID: 17)
+2026-08-25 14:08:05,329 - INFO - [root] - User ID 1 đã TẠO sự kiện 'string20' (ID: 18)
+2026-08-25 23:19:07,334 - INFO - [root] - User ID 3 đã TẠO task 'Thiết kế banner sự kiện' trong sự kiện ID: 2
+2026-08-25 23:38:46,625 - INFO - [root] - User ID 3 CẬP NHẬT task ID: 1
+2026-08-25 23:39:13,191 - INFO - [root] - User ID 3 CẬP NHẬT task ID: 1
+2026-08-26 00:45:56,037 - INFO - [root] - User ID 1 đã THÊM thành viên 4 (Quyền: MEMBER) vào sự kiện ID: 2
+2026-08-26 00:58:06,480 - INFO - [root] - User ID 3 CẬP NHẬT task ID: 1
+2026-08-26 01:02:18,879 - INFO - [root] - User ID 1 CẬP NHẬT task ID: 1
+2026-08-26 01:04:39,372 - INFO - [root] - User ID 4 CẬP NHẬT task ID: 1

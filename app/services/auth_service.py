@@ -49,5 +49,3 @@ def authenticate_user(db: Session, user_in: UserLogin):
     refrest_token = security.create_refrest_token(data={'sub': str(user.id)})
 
     return {"access_token": access_token, "refrest_token": refrest_token, "token_type": "bearer"}
-
-     

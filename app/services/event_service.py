@@ -18,7 +18,6 @@ logging.basicConfig(
     encoding='utf-8'
 )
 
-# --- HÀM HỖ TRỢ ---
 def get_event_or_404(db: Session, event_id: int):
     event = db.query(Event).filter(Event.id == event_id, Event.is_deleted == False).first()
     if not event:

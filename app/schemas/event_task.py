@@ -1,30 +1,30 @@
-from pydantic import BaseModel
-from datetime import datetime
+from pydantic import BaseModel, Field
 from typing import Optional
+from datetime import datetime
+from enum import Enum
 
-class EventTaskBase(BaseModel):
-    title: str
+class TaskStatus(str, Enum):
+    TODO = "TODO"
+    IN_PROGRESS = "IN_PROGRESS"
+    DONE = "DONE"
+
+class TaskPriority(str, Enum):
+    LOW = "LOW"
+    MEDIUM = "MEDIUM"
+    HIGH = "HIGH"
+
+class EventTaskCreate(BaseModel):
+    title: str = Field(..., min_length=1, max_length=255)
     description: Optional[str] = None
-    status: Optional[str] = "TODO"
-    priority: Optional[str] = "NORMAL"
-    due_date: Optional[datetime] = None
-
-class EventTaskCreate(EventTaskBase):
+    status: TaskStatus = TaskStatus.TODO
+    priority: TaskPriority = TaskPriority.MEDIUM
     assignee_id: Optional[int] = None
+    due_date: Optional[datetime] = None
 
 class EventTaskUpdate(BaseModel):
-    title: Optional[str] = None
+    title: Optional[str] = Field(None, min_length=1, max_length=255)
     description: Optional[str] = None
+    status: Optional[TaskStatus] = None
+    priority: Optional[TaskPriority] = None
     assignee_id: Optional[int] = None
-    status: Optional[str] = None
-    priority: Optional[str] = None
     due_date: Optional[datetime] = None
-
-class EventTaskResponse(EventTaskBase):
-    id: int
-    event_id: int
-    assignee_id: Optional[int] = None
-    created_at: datetime
-
-    class Config:
-        from_attributes = True
